@@ -1,0 +1,67 @@
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url("./visit-card.css");
+
+:root {
+  --dark: #111111;
+  --light: #F2F0E3;
+  --primary: #990022;
+
+  font-family: 'cormorant-infant', Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: var(--light);
+  background-color: var(--dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.desktop {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
