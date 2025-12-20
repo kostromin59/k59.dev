@@ -22,11 +22,11 @@
 
 body {
   margin: 0;
-  padding: 0 15px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
+  min-width: 345px;
   min-height: 100vh;
 }
 
@@ -52,16 +52,4 @@ a {
 
 a:visited {
   color: inherit;
-}
-
-.mobile {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.desktop {
-  @media (max-width: 768px) {
-    display: none;
-  }
 }

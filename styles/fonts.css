@@ -2,38 +2,12 @@
   font-family: 'cormorant-infant';
   font-style: normal;
   font-weight: 600;
-  /* font-display: swap; */
   src: url(../fonts/CormorantInfant-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'cormorant-infant';
-  font-style: normal;
-  font-weight: 400;
-  /* font-display: swap; */
-  src: url(../fonts/CormorantInfant-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'cormorant-infant';
-  font-style: normal;
-  font-weight: 300;
-  /* font-display: swap; */
-  src: url(../fonts/CormorantInfant-Light.ttf) format('truetype');
-}
-
-@font-face {
   font-family: 'cormorant-sc';
   font-style: normal;
   font-weight: 400;
-  /* font-display: swap; */
   src: url(../fonts/CormorantSC-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'cormorant-sc';
-  font-style: normal;
-  font-weight: 300;
-  /* font-display: swap; */
-  src: url(../fonts/CormorantSC-Light.ttf) format('truetype');
 }

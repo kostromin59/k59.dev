@@ -1,91 +1,203 @@
 .visit-card {
-  padding: 10px;
+  padding: 60px;
   width: 100%;
-  max-width: 500px;
+  max-width: 1200px;
   box-shadow: 0 0 200px var(--primary);
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
-  @media (min-width: 768px) {
-    padding: 20px;
-    max-width: 600px;
+  @media (max-width: 1024px) {
+    padding: 30px;
+    max-width: 800px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
+
+  .visit-card__qr {
+    img {
+      width: 140px;
+      height: 140px;
+
+      @media (max-width: 1024px) {
+        width: 100px;
+        height: 100px;
+      }
+
+      @media (max-width: 600px) {
+        width: 80px;
+        height: 80px;
+      }
+
+      @media (max-width: 480px) {
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+
+  .visit-card__logo {
+    height: 140px;
+
+    @media (max-width: 1024px) {
+      height: 100px;
+    }
+
+    @media (max-width: 600px) {
+      height: 80px;
+    }
+
+    @media (max-width: 480px) {
+      height: 65px;
+    }
   }
 
   main {
     width: 100%;
     display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px 0;
-    border-bottom: 1px var(--primary) dashed;
-  }
+    justify-content: space-between;
+    padding-bottom: 200px;
 
-  .visit-card__name {
+    @media (max-width: 1024px) {
+      padding-bottom: 150px;
+    }
+
+    @media (max-width: 768px) {
+      padding-bottom: 120px;
+    }
+
+    @media (max-width: 600px) {
+      padding-bottom: 70px;
+    }
+
     h1 {
+      font-size: 64px;
       font-family: 'cormorant-sc';
       font-weight: 400;
-      font-size: 28px;
-    }
 
-    h2 {
-      font-family: 'cormorant-infant';
-      font-weight: 600;
-      font-size: 18px;
-    }
+      @media (max-width: 1024px) {
+        font-size: 48px;
+      }
 
-    @media (min-width: 768px) {
-      h1 {
-        font-weight: 400;
+      @media (max-width: 600px) {
         font-size: 36px;
       }
 
-      h2 {
-        font-weight: 600;
+      @media (max-width: 480px) {
+        font-size: 32px;
+      }
+    }
+
+    h2 {
+      font-size: 36px;
+
+      @media (max-width: 1024px) {
         font-size: 24px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+
+    .visit-card__right p {
+      font-size: 36px;
+      margin: 0;
+
+      @media (max-width: 1024px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 16px;
       }
     }
   }
-
 
   footer {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 15px;
 
-    ul {
+    .visit-card__left {
       display: flex;
-      flex-direction: column;
-      gap: 5px;
+      gap: 35px;
 
-      @media (min-width: 768px) {
+      @media (max-width: 1024px) {
+        gap: 20px;
+      }
+
+      @media (max-width: 600px) {
+        gap: 10px;
+      }
+
+      @media (max-width: 480px) {
         gap: 8px;
       }
-    }
 
-    ul li a {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-family: 'cormorant-infant';
-      font-weight: 600;
-      color: var(--light);
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
+        a {
+          display: flex;
+          align-items: center;
 
+          :hover {
+            text-decoration: underline;
+          }
 
+          svg {
+            @media (max-width: 1024px) {
+              width: 24px;
+              height: 24px;
+            }
 
-      @media (min-width: 768px) {
-        gap: 8px;
-        font-size: 24px;
+            @media (max-width: 600px) {
+              width: 18px;
+              height: 18px;
+            }
+
+            @media (max-width: 480px) {
+              width: 16px;
+              height: 16px;
+            }
+          }
+
+          span {
+            margin-left: 10px;
+            font-size: 36px;
+            color: var(--light);
+
+            @media (max-width: 1024px) {
+              font-size: 24px;
+            }
+
+            @media (max-width: 600px) {
+              font-size: 18px;
+              margin-left: 5px;
+            }
+
+            @media (max-width: 480px) {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
-
-    ul li a:hover {
-      text-decoration: underline;
-    }
-
-
   }
 }
